@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css.css">
+    <title>Aime Work</title>
+</head>
+
+<body>
+    <div class="container">
+        <p class="messagetop">Fill 4 digits in the input
+            <button onclick="resetValues()" id="buttonreset" class="hidden">reset</button>
+            <button onclick="generateresult()" id="buttonsubmit" class="hidden">generate</button></p>
+        <div class="inputdiv">
+            <input id="digits" onkeypress="javascript:return isNumber(event)" type="text">
+        </div>
+        <div class="resultdiv" id="listofround"></div>
+    </div>
+    <script src="js.js"></script>
+</body>
+
+</html>
